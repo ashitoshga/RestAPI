@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="common.Retry_Listener"/>
+    <listener class-name="common.Listener_Class"/>
+  </listeners>
+  <test thread-count="5" name="TestF(failed)">
+    <classes>
+      <class name="tests.FailedTestCases2">
+        <methods>
+          <include name="testcase1"/>
+        </methods>
+      </class> <!-- tests.FailedTestCases2 -->
+      <class name="tests.FailedTestCases3">
+        <methods>
+          <include name="testcase1"/>
+        </methods>
+      </class> <!-- tests.FailedTestCases3 -->
+      <class name="tests.FailedTestCases">
+        <methods>
+          <include name="testcase3"/>
+        </methods>
+      </class> <!-- tests.FailedTestCases -->
+    </classes>
+  </test> <!-- TestF(failed) -->
+</suite> <!-- Failed suite [Suite] -->
